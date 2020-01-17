@@ -1,0 +1,21 @@
+.NewAccount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.NewAccount form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.NewAccount form .MuiButtonBase-root {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.NewAccount form .MuiTextField-root {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

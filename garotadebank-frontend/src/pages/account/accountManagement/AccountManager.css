@@ -1,0 +1,48 @@
+.AccountManager {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.AccountManager .summary {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.AccountManager .summary__content {
+    display: flex;
+    justify-content: center;
+}
+
+
+.AccountManager .summary__content span {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.AccountManager .table {
+    margin-bottom: 10px;
+}
+
+.AccountManager .actions {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.AccountManager .action {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+    width: 250px;
+}
+
+.AccountManager .cpf-input {
+    margin-top: 50px
+}
+
+.AccountManager .action-button {
+    margin-top: 10px;
+    width: 250px;
+}

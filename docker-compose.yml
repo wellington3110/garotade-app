@@ -1,0 +1,25 @@
+version: '3.1'
+
+services:
+  axonserver:
+    image: axoniq/axonserver
+    ports:
+      - "8024:8024"
+      - "8124:8124"
+    healthcheck:
+      test: "curl -f http://localhost:8024/actuator/health || exit 1"
+      interval: 1s
+      timeout: 10s
+      retries: 60
+  garotadebank-frontend:
+    build: garotadebank-frontend
+    ports:
+      - "3000:3000"
+  garotadebank:
+    build: garotadebank
+    ports:
+      - "8080:8080"
+    depends_on:
+      - axonserver
+
+      

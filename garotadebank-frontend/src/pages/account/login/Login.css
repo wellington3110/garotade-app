@@ -1,0 +1,22 @@
+.Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Login form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+
+.Login form .MuiButtonBase-root {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.Login form .MuiTextField-root {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
